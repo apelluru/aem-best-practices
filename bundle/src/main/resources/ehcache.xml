@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache:config xmlns:ehcache="http://www.ehcache.org/v3" xmlns:jsr107="http://www.ehcache.org/v3/jsr107">
+
+    <ehcache:service>
+        <jsr107:defaults enable-management="true" enable-statistics="false" />
+    </ehcache:service>
+
+	<ehcache:cache-template name="defaultTemplate">
+		<ehcache:expiry>
+			<ehcache:ttl unit="minutes">168</ehcache:ttl>
+		</ehcache:expiry>
+		<ehcache:heap unit="entries">200</ehcache:heap>
+	</ehcache:cache-template>
+</ehcache:config>
+    
